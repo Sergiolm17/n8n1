@@ -14,8 +14,11 @@ ENV DB_POSTGRESDB_USER=$PGUSER
 ENV DB_POSTGRESDB_PASSWORD=$PGPASSWORD
 ENV N8N_USER_FOLDER=$RAILWAY_VOLUME_MOUNT_PATH
 
-ENV N8N_HOST="n8n-production-a2f9.up.railway.app"
-ENV WEBHOOK_URL="https://n8n-production-a2f9.up.railway.app"
-ENV WEBHOOK_TUNNEL_URL="https://n8n-production-a2f9.up.railway.app"
+ENV N8N_PROTOCOL=https
+ENV N8N_HOST=n8n-production-a2f9.up.railway.app
+ENV WEBHOOK_URL=https://n8n-production-a2f9.up.railway.app
+ENV WEBHOOK_TUNNEL_URL=https://n8n-production-a2f9.up.railway.app
+ENV VUE_APP_URL_BASE_API=https://n8n-production-a2f9.up.railway.app/
+
 
 CMD ["n8n", "start"]
