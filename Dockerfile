@@ -20,5 +20,8 @@ ENV WEBHOOK_URL=https://n8n-production-a2f9.up.railway.app
 ENV WEBHOOK_TUNNEL_URL=https://n8n-production-a2f9.up.railway.app
 ENV VUE_APP_URL_BASE_API=https://n8n-production-a2f9.up.railway.app/
 
+ENV N8N_ENCRYPTION_KEY=aTbRPyiqxI
+
+
 
 CMD ["n8n", "start"]
